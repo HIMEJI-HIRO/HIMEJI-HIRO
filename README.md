@@ -1,86 +1,69 @@
 <div align="center">
 
-# Hi, I'm Hiro 👋
+<a href="https://github.com/HIMEJI-HIRO/muse-emotion-eq">
+  <img src="https://github.com/HIMEJI-HIRO/muse-emotion-eq/raw/main/demo/demo_hero.gif" width="720" alt="muse-emotion-eq">
+</a>
 
-### Vital Sensing × Affective Computing × Generative AI
-
-脳波 / 心拍などの **生体信号** と **AI** を組み合わせて、
-「人の状態に寄り添うインタラクション」を作る学生エンジニアです。
+### Vital signals &nbsp;→&nbsp; Sound · Light · Interaction
 
 </div>
 
+<br>
+
+センサで人を読み、ソフトウェアで応答する。
+**EEG / PPG × Affective Computing × Generative AI** を軸に、
+「人の状態に寄り添うインタラクション」を作っている学生エンジニアです。
+
+<br>
+
 ---
 
-## 🎯 Featured Project
+## Featured
 
-### [🧠🎵 muse-emotion-eq](https://github.com/HIMEJI-HIRO/muse-emotion-eq)
+### [`muse-emotion-eq`](https://github.com/HIMEJI-HIRO/muse-emotion-eq) &nbsp;🧠🎵
 
 > Your brain controls your music. In real time.
 
-<a href="https://github.com/HIMEJI-HIRO/muse-emotion-eq">
-  <img src="https://github.com/HIMEJI-HIRO/muse-emotion-eq/raw/main/demo/demo_hero.gif" width="640" alt="muse-emotion-eq demo">
-</a>
+Muse S Athena の **4ch EEG + PPG** から感情 (Arousal / Valence / Engagement / HR) を
+リアルタイム推定し、再生中の音楽を **6 バンド EQ** と **没入型映像** に同時マッピングする
+デスクトップアプリ。Russell 円環モデル + Engagement (β/α 比) を継続推定 →
+`pedalboard` で DSP → `PyQt5` で 30 Hz GUI、を 2 週間で MVP 化しました。
 
-Muse S Athena の **4ch EEG + PPG** から感情 (Arousal / Valence / Engagement / HR) を推定し、
-**音楽 EQ** (Drums / Bass / Mid / Vocals / High / Air) と **没入型映像** (海 / 水中 / 都市 / 森)
-にリアルタイム反映するデスクトップアプリ。
-
-`PyQt5` `pedalboard` `python-osc` `OpenCV` `NumPy/SciPy` `Veo` `Imagen` `Claude Code`
-
-→ [📂 リポジトリを見る](https://github.com/HIMEJI-HIRO/muse-emotion-eq)
+[`Repository`](https://github.com/HIMEJI-HIRO/muse-emotion-eq)
 &nbsp;·&nbsp;
-[🧪 信号処理の詳細](https://github.com/HIMEJI-HIRO/muse-emotion-eq/blob/main/docs/signal_processing.md)
+[`Architecture`](https://github.com/HIMEJI-HIRO/muse-emotion-eq/blob/main/docs/architecture.md)
 &nbsp;·&nbsp;
-[🤖 AI 協働開発の記録](https://github.com/HIMEJI-HIRO/muse-emotion-eq/blob/main/docs/ai_assisted_dev.md)
+[`Signal Processing`](https://github.com/HIMEJI-HIRO/muse-emotion-eq/blob/main/docs/signal_processing.md)
+&nbsp;·&nbsp;
+[`AI-assisted dev`](https://github.com/HIMEJI-HIRO/muse-emotion-eq/blob/main/docs/ai_assisted_dev.md)
+
+<br>
 
 ---
 
-## 🛠 Tech Stack
+## Now
 
-**Languages**
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+- **Iterating** &nbsp;`muse-emotion-eq` のパフォーマンス改善・1 分デモ動画・ML キャリブレーション
+- **Reading** &nbsp;fNIRS による注意推定 / Affective Haptics / Generative interaction
+- **Looking for** &nbsp;生体信号 × Human-Centered AI 領域のサマーインターン
 
-**Signal / DSP / ML**
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![MNE](https://img.shields.io/badge/MNE--Python-007ACC?style=for-the-badge)
-
-**GUI / Audio / Vision**
-![PyQt5](https://img.shields.io/badge/PyQt5-41CD52?style=for-the-badge&logo=qt&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![pedalboard](https://img.shields.io/badge/pedalboard-FF6F00?style=for-the-badge)
-
-**AI / Tools**
-![Claude](https://img.shields.io/badge/Claude_Code-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+<br>
 
 ---
 
-## 🌱 Interests
+## Toolbox
 
-- **Vital Sensing** — 脳波 (EEG) / 心拍 (PPG) / fNIRS など、人体から取れる信号
-- **Affective Computing** — 感情・覚醒度・集中度のリアルタイム推定
-- **Human-Centered AI** — モデルを「人に近づける」UX としての AI 活用
-- **Generative AI 協働開発** — Claude / Veo / Imagen と二人三脚での開発プロセス
+```
+Languages  Python
+Signals    NumPy · SciPy · MNE · pedalboard · OpenCV · python-osc
+ML         PyTorch · scikit-learn
+GUI        PyQt5 · pyqtgraph
+AI dev     Claude Code · Veo · Imagen
+Hardware   Muse S Athena (EEG/PPG) · VB-CABLE
+```
 
----
-
-## 📊 GitHub Stats
+<br>
 
 <div align="center">
-
-![Hiro's GitHub stats](https://github-readme-stats.vercel.app/api?username=HIMEJI-HIRO&show_icons=true&theme=tokyonight&hide_border=true)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=HIMEJI-HIRO&layout=compact&theme=tokyonight&hide_border=true)
-
-</div>
-
----
-
-<div align="center">
-
-✨ *「センサーで人を読み、AI で人に寄り添う」* ✨
-
+<sub><i>signals · sound · software — and the space where they meet.</i></sub>
 </div>
